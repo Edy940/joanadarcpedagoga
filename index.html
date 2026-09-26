@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Joana D'Arc | Educação Infantil</title>
+<meta name="description" content="Práticas, dicas, desafios e materiais gratuitos para professores e coordenação da Educação Infantil. Formações com Joana D'Arc, pedagoga e formadora.">
+<meta property="og:title" content="Joana D'Arc | Educação Infantil">
+<meta property="og:description" content="Práticas, dicas e materiais para a Educação Infantil. Formações para escolas e redes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Montserrat:wght@400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --creme:#F7F3EC; --papel:#FFFDF9; --grafite:#2F3437; --suave:#5C6468; --linha:#E6DFD3;
+    --azul:#6B8BA4; --azul-escuro:#4E6B82; --mostarda:#D9A441; --rosa:#D8A7A0; --argila:#A8665D;
+    --c-azul:#D6E3ED; --c-amarelo:#F7E8C4; --c-rosa:#F4DBD6; --c-salvia:#DDE8D8; --c-lavanda:#E6DEEE;
+    --titulo:Poppins,Montserrat,"Segoe UI",Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{margin:0;background:var(--creme);color:var(--grafite);font-family:Montserrat,"Segoe UI",Arial,sans-serif;font-size:16px;line-height:1.6}
+  a{color:var(--azul-escuro)}
+  .wrap{max-width:1040px;margin:0 auto;padding-inline:16px}
+
+  /* navegação */
+  .topo{position:sticky;top:0;z-index:10;background:rgba(247,243,236,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--linha)}
+  .topo .wrap{display:flex;align-items:center;gap:16px;min-height:60px}
+  .marca{font-family:var(--titulo);font-weight:600;text-decoration:none;color:var(--grafite);white-space:nowrap}
+  .marca span{color:var(--azul-escuro);font-weight:500}
+  .menu{display:flex;gap:4px;overflow-x:auto;margin-left:auto;scrollbar-width:none}
+  .menu::-webkit-scrollbar{display:none}
+  .menu a{text-decoration:none;color:var(--grafite);font-weight:600;font-size:14px;padding:8px 12px;border-radius:999px;white-space:nowrap}
+  .menu a:hover,.menu a:focus-visible{background:var(--c-amarelo)}
+  @media (max-width:720px){.topo .wrap{flex-wrap:wrap;gap:4px;padding-block:8px}.menu{margin-left:0;width:100%}}
+
+  /* início */
+  .hero{padding-block:48px 24px;display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center}
+  .foto{width:190px;height:190px;border-radius:50%;border:7px solid var(--mostarda);box-shadow:0 0 0 5px var(--papel);object-fit:cover}
+  .eyebrow{font-weight:600;font-size:13px;letter-spacing:.09em;text-transform:uppercase;color:var(--azul-escuro);margin:0 0 6px}
+  h1{font-family:var(--titulo);font-weight:600;font-size:clamp(30px,5vw,46px);line-height:1.1;margin:0 0 12px;text-wrap:balance}
+  .hero p.lead{margin:0 0 8px;max-width:52ch;color:var(--suave);font-size:17px}
+  .nota{font-family:Caveat,cursive;font-size:28px;color:var(--argila);margin:6px 0 18px}
+  .acoes{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;border-radius:999px;padding:12px 20px;border:1.5px solid var(--grafite);color:var(--grafite);background:var(--papel);transition:transform .15s ease, box-shadow .15s ease;cursor:pointer;font-family:inherit;font-size:15px}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 4px 0 var(--grafite)}
+  .btn.cheio{background:var(--grafite);color:var(--papel)}
+  .btn.cheio:hover{box-shadow:0 4px 0 var(--mostarda)}
+  .btn:focus-visible,.menu a:focus-visible,summary:focus-visible{outline:3px solid var(--azul);outline-offset:3px}
+  @media (max-width:720px){.hero{grid-template-columns:1fr;text-align:center;justify-items:center;gap:18px;padding-top:28px}.foto{width:150px;height:150px}.acoes{justify-content:center}.hero p.lead{margin-inline:auto}}
+
+  .destaque{background:var(--grafite);color:var(--papel);border-radius:28px;padding:26px 28px;display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;margin:14px 0 8px}
+  .destaque .selo{font-family:Caveat,cursive;font-size:26px;color:var(--mostarda);line-height:1}
+  .destaque h2{color:var(--papel);margin:0 0 4px;font-size:21px}
+  .destaque p{margin:0;opacity:.88}
+  @media (max-width:620px){.destaque{grid-template-columns:1fr}}
+
+  /* seções */
+  section.bloco{padding-block:56px 8px;scroll-margin-top:70px}
+  .cab{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:10px 24px;margin-bottom:22px}
+  h2{font-family:var(--titulo);font-weight:600;font-size:clamp(24px,3.4vw,32px);line-height:1.15;margin:0;text-wrap:balance}
+  .cab p{margin:6px 0 0;color:var(--suave);max-width:60ch}
+  .rabisco{font-family:Caveat,cursive;font-size:24px;color:var(--argila)}
+  .sublinha{display:block;width:90px;height:7px;background:var(--mostarda);border-radius:4px;margin-top:10px}
+
+  /* fichas de práticas */
+  .filtros{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+  .chip{border:1.5px solid var(--azul);background:transparent;color:var(--azul-escuro);border-radius:999px;padding:7px 14px;font-weight:600;font-size:14px;font-family:inherit;cursor:pointer}
+  .chip[aria-pressed="true"]{background:var(--azul-escuro);border-color:var(--azul-escuro);color:#fff}
+  .grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;align-items:start}
+  details.ficha{background:var(--papel);border-radius:22px;border:1px solid var(--linha);overflow:hidden}
+  details.ficha summary{list-style:none;cursor:pointer;padding:20px 22px 18px;position:relative}
+  details.ficha summary::-webkit-details-marker{display:none}
+  details.ficha summary::after{content:"+";position:absolute;right:20px;top:18px;width:30px;height:30px;border-radius:50%;background:var(--creme);display:grid;place-items:center;font-weight:600;font-size:18px}
+  details.ficha[open] summary::after{content:"–"}
+  .faixa{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.04em;padding:4px 10px;border-radius:999px;margin-bottom:10px}
+  .ficha h3{font-family:var(--titulo);font-weight:600;font-size:19px;margin:0 36px 4px 0;line-height:1.25}
+  .ficha summary p{margin:0;color:var(--suave);font-size:14.5px}
+  .corpo{padding:0 22px 20px;border-top:1px dashed var(--linha)}
+  .corpo h4{font-family:var(--titulo);font-size:14px;font-weight:600;margin:16px 0 4px;color:var(--azul-escuro);text-transform:uppercase;letter-spacing:.05em}
+  .corpo ul{margin:0;padding-left:18px}
+  .corpo li{margin:2px 0}
+  .corpo p{margin:0}
+  .cuidado{background:var(--c-amarelo);border-radius:12px;padding:10px 12px;margin-top:14px;font-size:14px}
+
+  /* desafios */
+  .desafios{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+  .desafio{border-radius:22px;padding:22px;display:flex;flex-direction:column;gap:8px}
+  .desafio .num{font-family:var(--titulo);font-weight:600;font-size:40px;line-height:1;color:#fff}
+  .desafio h3{font-family:var(--titulo);font-size:18px;margin:0}
+  .desafio p{margin:0;font-size:15px}
+  .desafio .pergunta{font-family:Caveat,cursive;font-size:22px;color:var(--argila);line-height:1.2;margin-top:auto;padding-top:6px}
+
+  /* dicas */
+  .dicas{display:grid;gap:12px}
+  details.dica{background:var(--papel);border-radius:18px;border:1px solid var(--linha)}
+  details.dica summary{list-style:none;cursor:pointer;padding:18px 22px;display:flex;gap:14px;align-items:center}
+  details.dica summary::-webkit-details-marker{display:none}
+  .dica .para{font-size:12px;font-weight:600;color:var(--azul-escuro);background:var(--c-azul);padding:4px 10px;border-radius:999px;white-space:nowrap}
+  .dica h3{font-family:var(--titulo);font-size:17px;margin:0;font-weight:600;flex:1}
+  .dica .seta{transition:transform .2s ease}
+  details.dica[open] .seta{transform:rotate(90deg)}
+  .dica .texto{padding:0 22px 20px;max-width:70ch}
+  .dica ol{padding-left:20px;margin:0}
+  .dica li{margin:6px 0}
+  @media (max-width:560px){details.dica summary{flex-wrap:wrap}}
+
+  /* ferramenta */
+  .ferramenta{background:var(--papel);border-radius:28px;border:1px solid var(--linha);padding:26px;display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:28px}
+  @media (max-width:800px){.ferramenta{grid-template-columns:1fr;padding:20px}}
+  fieldset{border:0;margin:0 0 18px;padding:0}
+  legend{font-family:var(--titulo);font-weight:600;font-size:15px;margin-bottom:8px;padding:0}
+  .opcoes{display:flex;flex-wrap:wrap;gap:8px}
+  .opcoes label{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--linha);background:var(--creme);border-radius:999px;padding:6px 12px;font-size:14px;font-weight:500;cursor:pointer}
+  .opcoes input{accent-color:var(--azul-escuro);margin:0}
+  .opcoes label:has(input:checked){border-color:var(--azul-escuro);background:var(--c-azul)}
+  .resultado{min-height:200px}
+  .resultado .vazio{color:var(--suave)}
+  .sugestao{border-radius:18px;padding:16px 18px;margin-bottom:12px;background:var(--creme)}
+  .sugestao h3{font-family:var(--titulo);font-size:17px;margin:0 0 6px}
+  .sugestao p{margin:4px 0;font-size:14.5px}
+  .sugestao strong{color:var(--azul-escuro)}
+  .aviso{font-size:13px;color:var(--suave);margin-top:6px}
+
+  /* materiais */
+  .materiais{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+  .material{background:var(--papel);border-radius:22px;border:1px solid var(--linha);padding:22px;display:flex;flex-direction:column;gap:10px}
+  .material .tag{align-self:start;font-size:12px;font-weight:600;background:var(--c-rosa);padding:4px 10px;border-radius:999px}
+  .material h3{font-family:var(--titulo);font-size:18px;margin:0}
+  .material p{margin:0;color:var(--suave);font-size:14.5px;flex:1}
+
+  /* formações */
+  .formacoes{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:16px}
+  @media (max-width:800px){.formacoes{grid-template-columns:1fr}}
+  .cartao{background:var(--papel);border-radius:24px;border:1px solid var(--linha);padding:24px}
+  .temas{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+  .temas li{border-radius:16px;padding:12px 16px;font-weight:600;font-size:15px}
+  .temas li span{display:block;font-weight:400;font-size:13.5px;color:var(--suave)}
+  .contato{background:var(--grafite);color:var(--papel);border-radius:24px;padding:26px;display:flex;flex-direction:column;gap:12px}
+  .contato h3{font-family:var(--titulo);font-size:22px;margin:0}
+  .contato p{margin:0;opacity:.9}
+  .contato .btn{justify-content:center}
+  .contato .btn.claro{background:var(--papel);color:var(--grafite);border-color:var(--papel)}
+  .contato .dado{font-size:14px;opacity:.85}
+
+
+  /* fundo animado */
+  .formas{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+  .formas span{position:absolute;border-radius:50%;opacity:.7;animation:flutua 18s ease-in-out infinite alternate}
+  .formas .a{width:380px;height:380px;background:var(--c-rosa);top:-140px;right:-120px}
+  .formas .b{width:260px;height:260px;background:var(--c-azul);bottom:-90px;left:-100px;animation-duration:22s}
+  .formas .c{width:80px;height:80px;background:var(--mostarda);top:38%;left:4%;opacity:.35;animation-duration:14s}
+  .formas .d{width:120px;height:120px;background:var(--c-salvia);top:62%;right:6%;animation-duration:20s}
+  @keyframes flutua{from{transform:translate(0,0) scale(1)}to{transform:translate(24px,-30px) scale(1.06)}}
+  .topo.rolou{box-shadow:0 6px 18px rgba(47,52,55,.08)}
+  .topo .cta-topo{margin-left:8px;padding:8px 14px;font-size:14px;white-space:nowrap;flex:none}
+  @media (max-width:720px){.topo .cta-topo{display:none}}
+
+  /* surgir ao rolar (só com JS ativo) */
+  .js .revela{opacity:0;transform:translateY(22px);transition:opacity .7s ease, transform .7s ease}
+  .js .revela.visivel{opacity:1;transform:none}
+
+  /* fichas abrindo suave */
+  details.ficha[open] .corpo, details.dica[open] .texto{animation:abre .35s ease}
+  @keyframes abre{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+
+  /* whatsapp flutuante */
+  .zap{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom, 0px));z-index:20;display:flex;align-items:center;gap:10px;background:#1F8F5F;color:#fff;text-decoration:none;font-weight:600;font-size:15px;padding:12px 18px 12px 14px;border-radius:999px;box-shadow:0 8px 24px rgba(31,143,95,.35)}
+  .zap svg{width:26px;height:26px}
+  .zap::before{content:"";position:absolute;inset:0;border-radius:inherit;border:2px solid #1F8F5F;animation:pulsa 2.4s ease-out infinite}
+  @keyframes pulsa{from{transform:scale(1);opacity:.7}to{transform:scale(1.25);opacity:0}}
+  .zap:focus-visible{outline:3px solid var(--mostarda);outline-offset:3px}
+  @media (max-width:520px){.zap span{display:none}.zap{padding:14px}}
+
+  /* chamadas intermediárias */
+  .chamada{margin-top:28px;border-radius:24px;background:var(--c-amarelo);padding:22px 24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px}
+  .chamada p{margin:0;font-family:var(--titulo);font-weight:600;font-size:18px;max-width:40ch}
+  .chamada.rosa{background:var(--c-rosa)}
+
+  /* como funciona */
+  .passos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-bottom:18px}
+  .passo{background:var(--papel);border:1px solid var(--linha);border-radius:22px;padding:22px;position:relative}
+  .passo .n{width:44px;height:44px;border-radius:50%;background:var(--mostarda);color:var(--grafite);font-family:var(--titulo);font-weight:600;display:grid;place-items:center;font-size:18px;margin-bottom:10px}
+  .passo h3{font-family:var(--titulo);font-size:18px;margin:0 0 4px}
+  .passo p{margin:0;color:var(--suave);font-size:14.5px}
+
+  /* formulário */
+  .form-proposta{display:grid;gap:12px}
+  .form-proposta .linha2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media (max-width:560px){.form-proposta .linha2{grid-template-columns:1fr}}
+  .campo{display:flex;flex-direction:column;gap:4px}
+  .campo label{font-size:13.5px;font-weight:600;color:var(--papel)}
+  .campo input,.campo select,.campo textarea{font:inherit;font-size:15px;border-radius:12px;border:1.5px solid transparent;padding:11px 12px;background:var(--papel);color:var(--grafite);width:100%}
+  .campo textarea{min-height:80px;resize:vertical}
+  .campo input:focus,.campo select:focus,.campo textarea:focus{outline:none;border-color:var(--mostarda)}
+  .erro{color:#FFD9A8;font-size:13px;min-height:0}
+  .contato .btn.zapbtn{background:#1F8F5F;border-color:#1F8F5F;color:#fff}
+  .contato .alternativas{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+  .contato .alternativas a{color:var(--papel);font-size:14px}
+  .formacoes{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr)}
+
+  footer{padding-block:48px 36px;text-align:center;color:var(--suave);font-size:13.5px}
+  footer p{margin:4px 0}
+
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.dica .seta{transition:none}.btn:hover{transform:none}.formas span,.zap::before{animation:none}.js .revela{opacity:1;transform:none;transition:none}details.ficha[open] .corpo,details.dica[open] .texto{animation:none}}
+</style>
+</head>
+<body>
+<div class="formas" aria-hidden="true"><span class="a"></span><span class="b"></span><span class="c"></span><span class="d"></span></div>
+
+<header class="topo">
+  <div class="wrap">
+    <a class="marca" href="#inicio">Joana D'Arc <span>| Educação Infantil</span></a>
+    <nav class="menu" aria-label="Seções">
+      <a href="#praticas">Práticas</a>
+      <a href="#desafios">Desafios</a>
+      <a href="#dicas">Dicas</a>
+      <a href="#monte">Monte seu contexto</a>
+      <a href="#materiais">Materiais</a>
+      <a href="#formacoes">Formações</a>
+    </nav>
+    <a class="btn cheio cta-topo" href="#proposta">Solicitar formação</a>
+  </div>
+</header>
+
+<main class="wrap" id="inicio">
+
+  <div class="hero">
+    <img class="foto" src="data:image/jpeg;base64,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" alt="Joana D'Arc sorrindo">
+    <div>
+      <p class="eyebrow">Pedagoga · Formadora de professores</p>
+      <h1>Educação Infantil com intencionalidade</h1>
+      <p class="lead">Práticas, dicas e materiais para professores e coordenação, a partir do Currículo da Cidade de São Paulo. Da teoria ao cotidiano.</p>
+      <p class="nota">um mundo de possibilidades</p>
+      <div class="acoes">
+        <a class="btn cheio" href="#proposta">Solicitar formação</a>
+        <a class="btn" href="#praticas">Ver práticas</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="destaque revela" role="note">
+    <div class="selo">desafio<br>da semana</div>
+    <div>
+      <h2>Escute antes de planejar</h2>
+      <p>Observe 10 minutos de brincadeira livre e anote três falas das crianças, do jeito que foram ditas. <a href="#desafios" style="color:var(--mostarda)">Ver todos os desafios</a></p>
+    </div>
+  </div>
+
+  <!-- PRÁTICAS -->
+  <section class="bloco" id="praticas" aria-labelledby="t-praticas">
+    <div class="cab revela">
+      <div>
+        <h2 id="t-praticas">Práticas para fazer com as crianças</h2>
+        <p>Fichas de contextos e propostas: materiais, organização do espaço, o que observar e como registrar.</p>
+        <span class="sublinha"></span>
+      </div>
+      <span class="rabisco">toque para abrir cada ficha</span>
+    </div>
+
+    <div class="filtros" role="group" aria-label="Filtrar por faixa etária">
+      <button class="chip" type="button" data-filtro="todas" aria-pressed="true">Todas</button>
+      <button class="chip" type="button" data-filtro="bebes" aria-pressed="false">Bebês</button>
+      <button class="chip" type="button" data-filtro="bem" aria-pressed="false">Crianças bem pequenas</button>
+      <button class="chip" type="button" data-filtro="pequenas" aria-pressed="false">Crianças pequenas</button>
+    </div>
+
+    <div class="grade" id="fichas">
+
+      <details class="ficha" data-faixa="bebes">
+        <summary>
+          <span class="faixa" style="background:var(--c-rosa)">Bebês</span>
+          <h3>Cesto dos tesouros</h3>
+          <p>Objetos do cotidiano e da natureza para explorar com as mãos e a boca, no tempo do bebê.</p>
+        </summary>
+        <div class="corpo">
+          <h4>Materiais</h4>
+          <ul><li>Cesto baixo e firme</li><li>Colher de pau, escova, esponja natural, pinha, argolas de metal, retalhos de tecido</li></ul>
+          <h4>Organização</h4>
+          <p>Cesto no chão, com os bebês sentados ao redor. O adulto fica próximo, disponível e em silêncio atento.</p>
+          <h4>O que observar</h4>
+          <ul><li>Quais objetos atraem e por quanto tempo</li><li>Gestos: pegar, bater, passar de uma mão para a outra</li><li>Trocas de olhar com outros bebês</li></ul>
+          <h4>Como registrar</h4>
+          <p>Sequência de fotos das mãos em ação e uma nota curta sobre as escolhas de cada bebê.</p>
+          <p class="cuidado">Cuidado: nenhum objeto pequeno que possa ser engolido. Higienize e revise o cesto antes de cada uso.</p>
+        </div>
+      </details>
+
+      <details class="ficha" data-faixa="bem pequenas">
+        <summary>
+          <span class="faixa" style="background:var(--c-amarelo)">Bem pequenas e pequenas</span>
+          <h3>Luz e sombra</h3>
+          <p>Lanternas, caixas e objetos que viram cenários, hipóteses e brincadeiras.</p>
+        </summary>
+        <div class="corpo">
+          <h4>Materiais</h4>
+          <ul><li>Lanternas</li><li>Caixas de papelão abertas</li><li>Tecido escuro no chão</li><li>Objetos opacos e translúcidos, papel celofane colorido</li></ul>
+          <h4>Organização</h4>
+          <p>Um canto escurecido, com lanternas ao alcance e uma parede ou tecido claro para projetar.</p>
+          <h4>O que observar</h4>
+          <ul><li>Hipóteses sobre o tamanho da sombra</li><li>Descobertas sobre cor e transparência</li><li>Parcerias que surgem na brincadeira</li></ul>
+          <h4>Como registrar</h4>
+          <p>Fotos das sombras e das falas das crianças sobre o que está acontecendo.</p>
+          <h4>Variações</h4>
+          <p>Sombras no pátio, ao sol, em diferentes horários do dia.</p>
+        </div>
+      </details>
+
+      <details class="ficha" data-faixa="bem pequenas">
+        <summary>
+          <span class="faixa" style="background:var(--c-amarelo)">Bem pequenas e pequenas</span>
+          <h3>Materiais de largo alcance</h3>
+          <p>Caixas, tubos, tecidos e madeira que podem ser tudo o que a imaginação quiser.</p>
+        </summary>
+        <div class="corpo">
+          <h4>Materiais</h4>
+          <ul><li>Caixas e tubos de papelão</li><li>Tecidos de tamanhos variados</li><li>Cordas, carretéis, pedaços de madeira lixados</li></ul>
+          <h4>Organização</h4>
+          <p>Materiais separados por tipo em cestos, visíveis e ao alcance. Deixe espaço livre para as construções.</p>
+          <h4>O que observar</h4>
+          <ul><li>Construções e equilíbrios</li><li>Faz de conta: o que cada objeto vira</li><li>Negociações entre as crianças</li></ul>
+          <h4>Como registrar</h4>
+          <p>Fotos em sequência de uma mesma construção, do começo ao fim.</p>
+        </div>
+      </details>
+
+      <details class="ficha" data-faixa="bem pequenas">
+        <summary>
+          <span class="faixa" style="background:var(--c-salvia)">Todas as idades</span>
+          <h3>Natureza e texturas</h3>
+          <p>Areia, terra, folhas e pedras para comparar, transvasar e colecionar.</p>
+        </summary>
+        <div class="corpo">
+          <h4>Materiais</h4>
+          <ul><li>Areia, terra, folhas secas, pedras grandes, gravetos</li><li>Bacias, peneiras, potes e colheres</li></ul>
+          <h4>Organização</h4>
+          <p>No pátio ou sobre uma lona, com os elementos em bacias separadas.</p>
+          <h4>O que observar</h4>
+          <ul><li>Comparações: leve, pesado, áspero, macio</li><li>Classificações que as próprias crianças criam</li></ul>
+          <h4>Como registrar</h4>
+          <p>Fotografe as coleções que as crianças montam e anote os critérios que elas usaram.</p>
+          <p class="cuidado">Com bebês, use apenas elementos grandes e acompanhe de perto.</p>
+        </div>
+      </details>
+
+      <details class="ficha" data-faixa="pequenas">
+        <summary>
+          <span class="faixa" style="background:var(--c-azul)">Crianças pequenas</span>
+          <h3>Frutas e sentidos</h3>
+          <p>Cheirar, tocar, comparar cores, tamanhos e sementes.</p>
+        </summary>
+        <div class="corpo">
+          <h4>Materiais</h4>
+          <ul><li>Frutas inteiras e cortadas</li><li>Lupas, pratos e bandejas</li><li>Papel e giz para desenho de observação</li></ul>
+          <h4>O que observar</h4>
+          <ul><li>Descrições de cheiros, cores e texturas</li><li>Curiosidade pelas sementes: onde estão, quantas são</li></ul>
+          <h4>Como registrar</h4>
+          <p>Desenhos de observação e falas das crianças ao lado das fotos.</p>
+          <p class="cuidado">Consulte a equipe de nutrição e as restrições alimentares das crianças antes da proposta.</p>
+        </div>
+      </details>
+
+      <details class="ficha" data-faixa="bebes">
+        <summary>
+          <span class="faixa" style="background:var(--c-salvia)">Todas as idades</span>
+          <h3>Canto de leitura</h3>
+          <p>Livros ao alcance das mãos, num convite para ler juntos ou sozinho.</p>
+        </summary>
+        <div class="corpo">
+          <h4>Materiais</h4>
+          <ul><li>Livros de diferentes gêneros e tamanhos (de pano e cartonados para bebês)</li><li>Tapete, almofadas, cesto baixo</li></ul>
+          <h4>Organização</h4>
+          <p>Livros com a capa virada para as crianças, trocados com frequência.</p>
+          <h4>O que observar</h4>
+          <ul><li>Escolhas e livros preferidos</li><li>Como manuseiam e "leem" as imagens</li><li>Histórias que recontam entre si</li></ul>
+          <h4>Como registrar</h4>
+          <p>Lista dos livros mais escolhidos da semana e falas sobre as histórias.</p>
+        </div>
+      </details>
+
+    </div>
+    <div class="chamada revela">
+      <p>Quer aprofundar essas práticas com a sua equipe?</p>
+      <a class="btn cheio" href="#proposta">Solicitar formação</a>
+    </div>
+  </section>
+
+  <!-- DESAFIOS -->
+  <section class="bloco" id="desafios" aria-labelledby="t-desafios">
+    <div class="cab revela">
+      <div>
+        <h2 id="t-desafios">Desafios para a professora</h2>
+        <p>Um desafio por semana para observar, experimentar e refletir sobre a própria prática.</p>
+        <span class="sublinha"></span>
+      </div>
+      <span class="rabisco">faça e conte no Instagram</span>
+    </div>
+    <div class="desafios">
+      <article class="desafio revela" style="background:var(--c-azul)">
+        <span class="num">01</span>
+        <h3>Escuta</h3>
+        <p>Observe 10 minutos de brincadeira livre e anote três falas das crianças, do jeito que foram ditas.</p>
+        <p class="pergunta">O que essas falas mostram sobre o interesse delas?</p>
+      </article>
+      <article class="desafio revela" style="background:var(--c-amarelo)">
+        <span class="num">02</span>
+        <h3>Olhar da criança</h3>
+        <p>Agache-se na altura das crianças e fotografe a sala. O que está ao alcance delas? O que só o adulto vê?</p>
+        <p class="pergunta">Que mudança pequena você faria amanhã?</p>
+      </article>
+      <article class="desafio revela" style="background:var(--c-rosa)">
+        <span class="num">03</span>
+        <h3>Tempo de espera</h3>
+        <p>Em um dia comum, anote quanto tempo as crianças esperam nas transições: fila, troca, antes do lanche.</p>
+        <p class="pergunta">Onde a espera pode virar experiência?</p>
+      </article>
+      <article class="desafio revela" style="background:var(--c-salvia)">
+        <span class="num">04</span>
+        <h3>Descrever antes de interpretar</h3>
+        <p>Escolha uma criança e registre uma cena só descrevendo ações e falas, sem adjetivos nem julgamentos.</p>
+        <p class="pergunta">O que você percebeu que antes passava despercebido?</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- DICAS -->
+  <section class="bloco" id="dicas" aria-labelledby="t-dicas">
+    <div class="cab revela">
+      <div>
+        <h2 id="t-dicas">Dicas para o dia a dia</h2>
+        <p>Textos curtos e práticos para professores e coordenação.</p>
+        <span class="sublinha"></span>
+      </div>
+    </div>
+    <div class="dicas">
+      <details class="dica revela">
+        <summary><span class="para">Professores</span><h3>5 formas de registrar o cotidiano</h3><span class="seta" aria-hidden="true">›</span></summary>
+        <div class="texto">
+          <ol>
+            <li><strong>Fotos em sequência:</strong> três ou quatro imagens mostram um processo melhor do que uma só.</li>
+            <li><strong>Falas transcritas:</strong> anote do jeito que a criança disse. É ali que aparecem as hipóteses.</li>
+            <li><strong>Produções das crianças:</strong> desenhos, construções e coleções, sempre com data e contexto.</li>
+            <li><strong>Diário de bordo:</strong> um caderno seu, com o que funcionou e o que mudar.</li>
+            <li><strong>Mini-histórias:</strong> uma foto e um pequeno texto contando um momento significativo, para compartilhar com as famílias.</li>
+          </ol>
+        </div>
+      </details>
+      <details class="dica revela">
+        <summary><span class="para">Professores</span><h3>Como organizar a sala de referência</h3><span class="seta" aria-hidden="true">›</span></summary>
+        <div class="texto">
+          <ol>
+            <li>Materiais visíveis e ao alcance, para que as crianças escolham sem depender do adulto.</li>
+            <li>Cantos com propostas diferentes: leitura, faz de conta, construção, artes.</li>
+            <li>Espaço livre para o movimento. Sala cheia demais também limita.</li>
+            <li>Produções das crianças nas paredes, na altura dos olhos delas.</li>
+            <li>Mudanças a partir da observação: o espaço conversa com o que as crianças estão investigando.</li>
+          </ol>
+        </div>
+      </details>
+      <details class="dica revela">
+        <summary><span class="para" style="background:var(--c-rosa);color:var(--argila)">Coordenação</span><h3>Devolutivas que formam</h3><span class="seta" aria-hidden="true">›</span></summary>
+        <div class="texto">
+          <ol>
+            <li>Comece pelo que você observou, com exemplos concretos.</li>
+            <li>Faça perguntas abertas: "o que você percebeu nas crianças?"</li>
+            <li>Escolha um foco por vez. Muitas sugestões juntas não viram mudança.</li>
+            <li>Combine um próximo passo possível e uma data para retomar.</li>
+            <li>Volte ao combinado. A devolutiva é um processo, não um momento.</li>
+          </ol>
+        </div>
+      </details>
+    </div>
+    <div class="chamada rosa revela">
+      <p>Coordenação e gestão: vamos pensar a formação da sua unidade juntas?</p>
+      <a class="btn cheio" href="#proposta">Conversar sobre uma formação</a>
+    </div>
+  </section>
+
+  <!-- FERRAMENTA -->
+  <section class="bloco" id="monte" aria-labelledby="t-monte">
+    <div class="cab revela">
+      <div>
+        <h2 id="t-monte">Monte seu contexto investigativo</h2>
+        <p>Escolha a faixa etária, o espaço e os materiais que você tem. As sugestões aparecem ao lado.</p>
+        <span class="sublinha"></span>
+      </div>
+    </div>
+    <div class="ferramenta revela">
+      <form id="form-contexto" onsubmit="return false">
+        <fieldset>
+          <legend>Faixa etária</legend>
+          <div class="opcoes">
+            <label><input type="radio" name="idade" id="id-bebes" value="bebes"> Bebês</label>
+            <label><input type="radio" name="idade" id="id-bem" value="bem" checked> Bem pequenas</label>
+            <label><input type="radio" name="idade" id="id-peq" value="pequenas"> Pequenas</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Espaço</legend>
+          <div class="opcoes">
+            <label><input type="radio" name="espaco" id="esp-sala" value="sala" checked> Sala</label>
+            <label><input type="radio" name="espaco" id="esp-patio" value="patio"> Pátio</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Materiais que você tem</legend>
+          <div class="opcoes" id="mat-opcoes"></div>
+        </fieldset>
+      </form>
+      <div class="resultado" id="resultado" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- MATERIAIS -->
+  <section class="bloco" id="materiais" aria-labelledby="t-materiais">
+    <div class="cab revela">
+      <div>
+        <h2 id="t-materiais">Materiais para baixar</h2>
+        <p>Gratuitos, para imprimir e usar com a equipe.</p>
+        <span class="sublinha"></span>
+      </div>
+    </div>
+    <div class="materiais">
+      <article class="material revela">
+        <span class="tag">PDF · 1 página</span>
+        <h3>Ficha de registro de observação</h3>
+        <p>Para acompanhar bebês e crianças: o que observei, falas, materiais, o que isso mostra e próximos passos.</p>
+        <a class="btn cheio" href="materiais/ficha-de-registro-de-observacao.pdf" download>Baixar ficha</a>
+      </article>
+      <article class="material revela">
+        <span class="tag" style="background:var(--c-azul)">PDF · 1 página</span>
+        <h3>Checklist: organização do cotidiano</h3>
+        <p>Um olhar rápido para espaços, materialidades, tempos e interações na sala de referência.</p>
+        <a class="btn cheio" href="materiais/checklist-organizacao-do-cotidiano.pdf" download>Baixar checklist</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- FORMAÇÕES -->
+  <section class="bloco" id="formacoes" aria-labelledby="t-formacoes">
+    <div class="cab revela">
+      <div>
+        <h2 id="t-formacoes">Formações para escolas e redes</h2>
+        <p>Encontros com equipes docentes e gestão, pensados para a realidade de cada unidade.</p>
+        <span class="sublinha"></span>
+      </div>
+    </div>
+    <div class="passos">
+      <article class="passo revela"><div class="n">1</div><h3>Conversa inicial</h3><p>Você conta sobre a unidade, a equipe e o que querem aprofundar.</p></article>
+      <article class="passo revela"><div class="n">2</div><h3>Proposta sob medida</h3><p>Tema, formato, duração e datas pensados para a realidade da sua escola.</p></article>
+      <article class="passo revela"><div class="n">3</div><h3>Formação na unidade</h3><p>Encontro com a equipe docente e a gestão, com materiais de apoio.</p></article>
+    </div>
+    <div class="formacoes">
+      <div class="cartao revela">
+        <h3 style="font-family:var(--titulo);margin:0 0 12px;font-size:19px">Temas</h3>
+        <ul class="temas">
+          <li style="background:var(--c-azul)">Organização do cotidiano no CEI<span>Modos de organização da vida na unidade, rotina e intencionalidade</span></li>
+          <li style="background:var(--c-amarelo)">Espaços, materialidades, tempos e interações<span>Os elementos que compõem as narrativas curriculares</span></li>
+          <li style="background:var(--c-rosa)">Contextos investigativos<span>Cenários planejados que convidam bebês e crianças a explorar</span></li>
+          <li style="background:var(--c-lavanda)">Currículo da Cidade na prática<span>Da leitura do documento ao planejamento da sala</span></li>
+        </ul>
+      </div>
+      <div class="contato revela" id="proposta">
+        <h3>Solicite uma proposta</h3>
+        <p id="form-dica">Preencha e a mensagem abre pronta no WhatsApp da Joana.</p>
+        <form class="form-proposta" id="form-proposta" novalidate>
+          <div class="linha2">
+            <div class="campo"><label for="p-nome">Seu nome *</label><input id="p-nome" autocomplete="name" placeholder="Maria Souza"><span class="erro" id="e-nome"></span></div>
+            <div class="campo"><label for="p-cargo">Cargo</label>
+              <select id="p-cargo"><option>Coordenação pedagógica</option><option>Direção</option><option>Professor(a)</option><option>Supervisão / DRE</option><option>Outro</option></select></div>
+          </div>
+          <div class="campo"><label for="p-escola">Escola ou unidade *</label><input id="p-escola" placeholder="CEI Jardim das Flores"><span class="erro" id="e-escola"></span></div>
+          <div class="linha2">
+            <div class="campo"><label for="p-local">Cidade ou DRE</label><input id="p-local" placeholder="DRE Santo Amaro"></div>
+            <div class="campo"><label for="p-qtd">Nº de participantes</label><input id="p-qtd" inputmode="numeric" placeholder="25"></div>
+          </div>
+          <div class="campo"><label for="p-tema">Tema de interesse</label>
+            <select id="p-tema"><option>Organização do cotidiano no CEI</option><option>Espaços, materialidades, tempos e interações</option><option>Contextos investigativos</option><option>Currículo da Cidade na prática</option><option>Ainda não sei, quero conversar</option></select></div>
+          <div class="campo"><label for="p-msg">Mensagem (opcional)</label><textarea id="p-msg" placeholder="Datas possíveis, formato, dúvidas..."></textarea></div>
+          <button class="btn zapbtn" type="submit" id="btn-enviar">Enviar pelo WhatsApp</button>
+        </form>
+        <div class="alternativas">
+          <a href="https://www.instagram.com/joanadarcpedagoga/" target="_blank" rel="noopener">Instagram: @joanadarcpedagoga</a>
+          <span class="dado">· E-mail: <a id="email-txt" href="mailto:pedagogajoanadarcsilva@gmail.com" style="color:inherit">pedagogajoanadarcsilva@gmail.com</a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<a class="zap" id="zap-flutuante" href="#" target="_blank" rel="noopener" aria-label="Falar com a Joana no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/></svg>
+  <span id="zap-rotulo">Fale comigo</span>
+</a>
+
+<footer>
+  <p>Joana D'Arc Alves da Silva · Pedagoga · Educação Infantil</p>
+  <p>Conteúdos baseados na prática e no Currículo da Cidade de São Paulo. Consulte sempre o documento oficial.</p>
+  <p>© 2026 Joana D'Arc Alves da Silva. Conteúdo protegido: reprodução somente com autorização.</p>
+</footer>
+
+<script>
+(function(){
+  // filtros das fichas
+  var chips = document.querySelectorAll('.chip');
+  var fichas = document.querySelectorAll('#fichas .ficha');
+  chips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      var f = chip.getAttribute('data-filtro');
+      chips.forEach(function(c){ c.setAttribute('aria-pressed', c === chip ? 'true' : 'false'); });
+      fichas.forEach(function(el){
+        var faixas = el.getAttribute('data-faixa');
+        var todas = el.querySelector('.faixa').textContent.indexOf('Todas') !== -1;
+        var bemPeq = el.querySelector('.faixa').textContent.indexOf('Bem pequenas e pequenas') !== -1;
+        var mostra = f === 'todas' || todas || faixas.indexOf(f) !== -1 || (bemPeq && (f === 'bem' || f === 'pequenas'));
+        el.hidden = !mostra;
+      });
+    });
+  });
+
+  // monte seu contexto
+  var MATERIAIS = [
+    ['caixas','Caixas de papelão'],['tecidos','Tecidos'],['lanternas','Lanternas'],['natureza','Elementos naturais'],
+    ['agua','Água'],['potes','Potes e recipientes'],['livros','Livros'],['espelhos','Espelhos'],['madeira','Madeira e carretéis'],['papel','Papel e giz']
+  ];
+  var PROPOSTAS = [
+    {t:'Cesto dos tesouros', idades:['bebes'], espacos:['sala'], mats:['natureza','madeira','tecidos','potes'],
+     o:'Um cesto baixo com objetos variados e seguros, bebês sentados ao redor.', obs:'Escolhas, gestos de exploração e tempo de concentração.'},
+    {t:'Espelhos e tecidos', idades:['bebes','bem'], espacos:['sala'], mats:['espelhos','tecidos'],
+     o:'Espelhos fixos na altura das crianças e tecidos leves para esconder e aparecer.', obs:'Reconhecimento de si, brincadeiras de esconde-esconde e expressões.'},
+    {t:'Luz e sombra', idades:['bem','pequenas'], espacos:['sala','patio'], mats:['lanternas','caixas','tecidos'],
+     o:'Canto escurecido, lanternas ao alcance e uma superfície clara para projetar.', obs:'Hipóteses sobre tamanho e forma das sombras.'},
+    {t:'Construções com largo alcance', idades:['bem','pequenas'], espacos:['sala','patio'], mats:['caixas','madeira','tecidos'],
+     o:'Materiais separados por tipo em cestos, com espaço livre para construir.', obs:'Equilíbrios, faz de conta e negociações.'},
+    {t:'Transvasar com água', idades:['bebes','bem','pequenas'], espacos:['patio'], mats:['agua','potes'],
+     o:'Bacias com pouca água, potes de tamanhos diferentes, funis e colheres.', obs:'Encher, esvaziar, comparar quantidades.'},
+    {t:'Laboratório de natureza', idades:['bem','pequenas'], espacos:['patio','sala'], mats:['natureza','potes'],
+     o:'Elementos naturais em bacias separadas, com potes para colecionar.', obs:'Comparações, classificações e critérios criados pelas crianças.'},
+    {t:'Canto de leitura aconchegante', idades:['bebes','bem','pequenas'], espacos:['sala','patio'], mats:['livros','tecidos'],
+     o:'Livros com a capa à vista, tapete e tecidos formando uma cabana.', obs:'Livros preferidos, manuseio e histórias recontadas.'},
+    {t:'Desenho de observação', idades:['pequenas'], espacos:['sala','patio'], mats:['papel','natureza'],
+     o:'Elementos naturais sobre a mesa, papel e giz disponíveis.', obs:'Detalhes que as crianças notam e registram.'},
+    {t:'Túneis e cabanas', idades:['bebes','bem','pequenas'], espacos:['sala','patio'], mats:['caixas','tecidos'],
+     o:'Caixas grandes abertas e tecidos para cobrir, formando passagens.', obs:'Movimento, entrar e sair, faz de conta.'},
+    {t:'Sons e ritmos', idades:['bebes','bem','pequenas'], espacos:['sala','patio'], mats:['potes','madeira','natureza'],
+     o:'Potes, pedaços de madeira e sementes em recipientes fechados para explorar sons.', obs:'Descobertas sobre forte, fraco, rápido e devagar.'}
+  ];
+  var box = document.getElementById('mat-opcoes');
+  MATERIAIS.forEach(function(m, i){
+    var lab = document.createElement('label');
+    lab.innerHTML = '<input type="checkbox" id="mat-' + m[0] + '" value="' + m[0] + '"' + (i < 3 ? ' checked' : '') + '> ' + m[1];
+    box.appendChild(lab);
+  });
+  var res = document.getElementById('resultado');
+  function atualiza(){
+    var idade = document.querySelector('input[name=idade]:checked').value;
+    var espaco = document.querySelector('input[name=espaco]:checked').value;
+    var tenho = Array.prototype.map.call(document.querySelectorAll('#mat-opcoes input:checked'), function(i){ return i.value; });
+    if (!tenho.length){ res.innerHTML = '<p class="vazio">Marque pelo menos um material para ver as sugestões.</p>'; return; }
+    var lista = PROPOSTAS.filter(function(p){ return p.idades.indexOf(idade) !== -1 && p.espacos.indexOf(espaco) !== -1; })
+      .map(function(p){ var n = p.mats.filter(function(m){ return tenho.indexOf(m) !== -1; }).length; return {p:p, n:n}; })
+      .filter(function(x){ return x.n > 0; })
+      .sort(function(a,b){ return b.n - a.n; }).slice(0, 3);
+    if (!lista.length){ res.innerHTML = '<p class="vazio">Nenhuma sugestão com essa combinação. Experimente marcar outros materiais ou trocar o espaço.</p>'; return; }
+    var nomes = {}; MATERIAIS.forEach(function(m){ nomes[m[0]] = m[1].toLowerCase(); });
+    var html = lista.map(function(x){
+      var usa = x.p.mats.filter(function(m){ return tenho.indexOf(m) !== -1; }).map(function(m){ return nomes[m]; }).join(', ');
+      return '<div class="sugestao"><h3>' + x.p.t + '</h3><p><strong>Com:</strong> ' + usa + '</p><p><strong>Como organizar:</strong> ' + x.p.o + '</p><p><strong>O que observar:</strong> ' + x.p.obs + '</p></div>';
+    }).join('');
+    if (idade === 'bebes') html += '<p class="aviso">Com bebês: apenas objetos grandes, sem partes pequenas, e acompanhamento de perto.</p>';
+    res.innerHTML = html;
+  }
+  document.getElementById('form-contexto').addEventListener('change', atualiza);
+  atualiza();
+})();
+</script>
+
+<script>
+// ====== CONFIGURAÇÃO: troque aqui ======
+var WHATSAPP = '';                          // 55 + DDD + número, só dígitos. Vazio = usa Instagram e e-mail
+var EMAIL    = 'pedagogajoanadarcsilva@gmail.com';
+var INSTAGRAM = 'joanadarcpedagoga';
+// ======================================
+document.documentElement.classList.add('js');
+(function(){
+  var temZap = WHATSAPP.replace(/\D/g,'').length >= 12;
+  function zap(txt){ return 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(txt); }
+  var direct = 'https://ig.me/m/' + INSTAGRAM;
+  var padrao = 'Olá, Joana! Vim pelo site e quero saber sobre formações.';
+  var flut = document.getElementById('zap-flutuante');
+  if (temZap){
+    flut.href = zap(padrao);
+  } else {
+    flut.href = direct;
+    flut.setAttribute('aria-label', 'Falar com a Joana pelo Instagram');
+    flut.style.background = '#6B8BA4';
+    flut.style.boxShadow = '0 8px 24px rgba(78,107,130,.35)';
+    document.getElementById('form-dica').textContent = 'Preencha e a mensagem abre pronta no seu e-mail, direto para a Joana.';
+    document.getElementById('btn-enviar').textContent = 'Enviar por e-mail';
+  }
+  var em = document.getElementById('email-txt'); em.textContent = EMAIL; em.href = 'mailto:' + EMAIL;
+
+  // formulário -> WhatsApp (ou e-mail, se não houver WhatsApp)
+  var form = document.getElementById('form-proposta');
+  function val(id){ return document.getElementById(id).value.trim(); }
+  function erro(id, msg){ document.getElementById('e-' + id).textContent = msg; }
+  ['nome','escola'].forEach(function(id){ document.getElementById('p-' + id).addEventListener('input', function(){ erro(id, ''); }); });
+  form.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    var ok = true;
+    if (!val('p-nome')){ erro('nome', 'Informe seu nome.'); ok = false; }
+    if (!val('p-escola')){ erro('escola', 'Informe a escola ou unidade.'); ok = false; }
+    if (!ok) return;
+    var linhas = ['Olá, Joana! Vim pelo site e gostaria de uma proposta de formação.', '',
+      'Nome: ' + val('p-nome'), 'Cargo: ' + val('p-cargo'), 'Unidade: ' + val('p-escola')];
+    if (val('p-local')) linhas.push('Cidade/DRE: ' + val('p-local'));
+    if (val('p-qtd')) linhas.push('Participantes: ' + val('p-qtd'));
+    linhas.push('Tema: ' + val('p-tema'));
+    if (val('p-msg')) linhas.push('', val('p-msg'));
+    var url;
+    if (temZap){ url = zap(linhas.join('\n')); }
+    else { url = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent('Proposta de formação - ' + val('p-escola')) + '&body=' + encodeURIComponent(linhas.join('\n')); }
+    var a = document.createElement('a');
+    a.href = url; if (temZap){ a.target = '_blank'; a.rel = 'noopener'; }
+    document.body.appendChild(a); a.click(); a.remove();
+  });
+
+  // topo com sombra
+  var topo = document.querySelector('.topo');
+  function sombra(){ topo.classList.toggle('rolou', window.scrollY > 8); }
+  window.addEventListener('scroll', sombra, {passive:true}); sombra();
+
+  // elementos surgindo ao rolar
+  var itens = document.querySelectorAll('.revela');
+  if (!('IntersectionObserver' in window)){ itens.forEach(function(e){ e.classList.add('visivel'); }); return; }
+  var io = new IntersectionObserver(function(ents){
+    ents.forEach(function(en){ if (en.isIntersecting){ en.target.classList.add('visivel'); io.unobserve(en.target); } });
+  }, {rootMargin:'0px 0px -8% 0px'});
+  itens.forEach(function(e, i){ e.style.transitionDelay = (i % 4) * 60 + 'ms'; io.observe(e); });
+})();
+</script>
+</body>
+</html>
