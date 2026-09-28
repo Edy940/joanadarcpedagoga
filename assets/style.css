@@ -272,3 +272,10 @@
   .pular{position:absolute;left:-999px;top:8px;background:var(--grafite);color:#fff;padding:8px 14px;border-radius:999px;z-index:50}
   .pular:focus{left:12px}
 .ig-ico{display:inline-block;vertical-align:middle}
+.rodape-contatos{display:flex;flex-direction:column;align-items:center;gap:16px;margin-bottom:26px}
+.redes{display:flex;gap:12px}
+footer{padding-bottom:110px}
+.rede{width:46px;height:46px;border-radius:50%;background:var(--papel);border:1.5px solid var(--linha);display:grid;place-items:center;color:var(--grafite);text-decoration:none;transition:transform .15s ease,background .15s ease,color .15s ease}
+.rede:hover,.rede:focus-visible{background:var(--grafite);color:var(--papel);border-color:var(--grafite);transform:translateY(-2px)}
+.rede:focus-visible{outline:3px solid var(--azul);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){.rede{transition:none}.rede:hover{transform:none}}
