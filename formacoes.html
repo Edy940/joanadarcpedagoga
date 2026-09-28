@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Formações | Joana D'Arc</title>
+<meta name="description" content="Formações para equipes docentes e gestão da Educação Infantil. Solicite uma proposta.">
+<meta property="og:title" content="Formações | Joana D'Arc">
+<meta property="og:description" content="Formações para equipes docentes e gestão da Educação Infantil. Solicite uma proposta.">
+<meta property="og:image" content="assets/joana.jpg">
+<link rel="icon" href="assets/joana.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Montserrat:wght@400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<div class="formas" aria-hidden="true"><span class="a"></span><span class="b"></span><span class="c"></span><span class="d"></span></div>
+<header class="topo">
+  <div class="wrap">
+    <a class="marca" href="index.html">Joana D'Arc <span>| Educação Infantil</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-principal"><span class="barras" aria-hidden="true"><i></i><i></i><i></i></span> Menu</button>
+    <nav class="menu" id="menu-principal" aria-label="Páginas">
+      <a href="sobre.html">Sobre</a>
+      <a href="praticas.html">Práticas</a>
+      <a href="desafios.html">Desafios</a>
+      <a href="dicas.html">Dicas</a>
+      <a href="monte-seu-contexto.html">Monte seu contexto</a>
+      <a href="materiais.html">Materiais</a>
+      <a href="formacoes.html" aria-current="page">Formações</a>
+    </nav>
+    <a class="btn cheio cta-topo" href="formacoes.html#proposta">Solicitar formação</a>
+  </div>
+</header>
+<main class="wrap pagina-entra" id="conteudo">
+  <div class="pagina-topo">
+    <nav class="trilha" aria-label="Você está em"><a href="index.html">Início</a><span aria-hidden="true">›</span><span>Formações</span></nav>
+    <h1>Formações para escolas e redes</h1>
+    <p class="lead">Encontros com equipes docentes e gestão, pensados para a realidade de cada unidade. Preencha o formulário e a mensagem chega pronta no WhatsApp.</p>
+    <span class="sublinha"></span>
+  </div>
+  <div class="conteudo">
+
+    
+    <div class="passos">
+      <article class="passo revela"><div class="n">1</div><h3>Conversa inicial</h3><p>Você conta sobre a unidade, a equipe e o que querem aprofundar.</p></article>
+      <article class="passo revela"><div class="n">2</div><h3>Proposta sob medida</h3><p>Tema, formato, duração e datas pensados para a realidade da sua escola.</p></article>
+      <article class="passo revela"><div class="n">3</div><h3>Formação na unidade</h3><p>Encontro com a equipe docente e a gestão, com materiais de apoio.</p></article>
+    </div>
+    <div class="formacoes">
+      <div class="cartao revela">
+        <h3 style="font-family:var(--titulo);margin:0 0 12px;font-size:19px">Temas</h3>
+        <ul class="temas">
+          <li style="background:var(--c-azul)">Organização do cotidiano no CEI<span>Modos de organização da vida na unidade, rotina e intencionalidade</span></li>
+          <li style="background:var(--c-amarelo)">Espaços, materialidades, tempos e interações<span>Os elementos que compõem as narrativas curriculares</span></li>
+          <li style="background:var(--c-rosa)">Contextos investigativos<span>Cenários planejados que convidam bebês e crianças a explorar</span></li>
+          <li style="background:var(--c-lavanda)">Currículo da Cidade na prática<span>Da leitura do documento ao planejamento da sala</span></li>
+        </ul>
+      </div>
+      <div class="contato revela" id="proposta">
+        <h3>Solicite uma proposta</h3>
+        <p id="form-dica">Preencha e a mensagem abre pronta no WhatsApp da Joana.</p>
+        <form class="form-proposta" id="form-proposta" novalidate>
+          <div class="linha2">
+            <div class="campo"><label for="p-nome">Seu nome *</label><input id="p-nome" autocomplete="name" placeholder="Maria Souza"><span class="erro" id="e-nome"></span></div>
+            <div class="campo"><label for="p-cargo">Cargo</label>
+              <select id="p-cargo"><option>Coordenação pedagógica</option><option>Direção</option><option>Professor(a)</option><option>Supervisão / DRE</option><option>Outro</option></select></div>
+          </div>
+          <div class="campo"><label for="p-escola">Escola ou unidade *</label><input id="p-escola" placeholder="CEI Jardim das Flores"><span class="erro" id="e-escola"></span></div>
+          <div class="linha2">
+            <div class="campo"><label for="p-local">Cidade ou DRE</label><input id="p-local" placeholder="DRE Santo Amaro"></div>
+            <div class="campo"><label for="p-qtd">Nº de participantes</label><input id="p-qtd" inputmode="numeric" placeholder="25"></div>
+          </div>
+          <div class="campo"><label for="p-tema">Tema de interesse</label>
+            <select id="p-tema"><option>Organização do cotidiano no CEI</option><option>Espaços, materialidades, tempos e interações</option><option>Contextos investigativos</option><option>Currículo da Cidade na prática</option><option>Ainda não sei, quero conversar</option></select></div>
+          <div class="campo"><label for="p-msg">Mensagem (opcional)</label><textarea id="p-msg" placeholder="Datas possíveis, formato, dúvidas..."></textarea></div>
+          <button class="btn zapbtn" type="submit" id="btn-enviar">Enviar pelo WhatsApp</button>
+        </form>
+        <div class="alternativas">
+          <a href="https://www.instagram.com/joanadarcpedagoga/" target="_blank" rel="noopener">Instagram: @joanadarcpedagoga</a>
+          <span class="dado">· E-mail: <a id="email-txt" href="mailto:pedagogajoanadarcsilva@gmail.com" style="color:inherit">pedagogajoanadarcsilva@gmail.com</a></span>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+<nav class="proximo" aria-label="Continue navegando">
+  <a href="materiais.html"><small>← Anterior</small><strong>Materiais</strong></a>
+  <a href="index.html" class="dir"><small>Voltar →</small><strong>Início</strong></a>
+</nav>
+</main>
+
+<a class="zap" id="zap-flutuante" href="#" target="_blank" rel="noopener" aria-label="Falar com a Joana no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/></svg>
+  <span id="zap-rotulo">Fale comigo</span>
+</a>
+
+<footer>
+  <p style="margin-bottom:10px"><a href="formacoes.html#proposta">Solicitar formação</a> · <a href="https://www.instagram.com/joanadarcpedagoga/" target="_blank" rel="noopener">Instagram</a> · <a id="email-txt" href="mailto:pedagogajoanadarcsilva@gmail.com">E-mail</a></p>
+  <p>Joana D'Arc Alves da Silva · Pedagoga · Educação Infantil</p>
+  <p>Conteúdos baseados na prática e no Currículo da Cidade de São Paulo. Consulte sempre o documento oficial.</p>
+  <p>© 2026 Joana D'Arc Alves da Silva. Conteúdo protegido: reprodução somente com autorização.</p>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
