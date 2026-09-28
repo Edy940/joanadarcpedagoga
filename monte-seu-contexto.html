@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Monte seu contexto | Joana D'Arc</title>
 <meta name="description" content="Ferramenta para montar contextos investigativos a partir da faixa etária, do espaço e dos materiais disponíveis.">
 <meta property="og:title" content="Monte seu contexto | Joana D'Arc">
@@ -13,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Montserrat:wght@400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/style.css">
-<script>document.documentElement.classList.add('js');</script>
+<script src="/assets/js-flag.js"></script>
 </head>
 <body>
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
@@ -45,7 +47,7 @@
 
     
     <div class="ferramenta revela">
-      <form id="form-contexto" onsubmit="return false">
+      <form id="form-contexto">
         <fieldset>
           <legend>Faixa etária</legend>
           <div class="opcoes">
@@ -92,7 +94,7 @@
   </div>
   <p>Joana D'Arc Alves da Silva · Pedagoga · Educação Infantil</p>
   <p>Conteúdos baseados na prática e no Currículo da Cidade de São Paulo. Consulte sempre o documento oficial.</p>
-  <p>© 2026 Joana D'Arc Alves da Silva. Conteúdo protegido: reprodução somente com autorização.</p>
+  <p>© 2026 Joana D'Arc Alves da Silva. Conteúdo protegido: reprodução somente com autorização. · <a href="/privacidade">Privacidade</a></p>
 </footer>
 <script src="/assets/app.js"></script>
 </body>

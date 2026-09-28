@@ -146,3 +146,5 @@ document.documentElement.classList.add('js');
   });
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && topo.classList.contains('aberto')){ topo.classList.remove('aberto'); btn.setAttribute('aria-expanded','false'); btn.focus(); } });
 })();
+
+(function(){var f=document.getElementById('form-contexto'); if(f) f.addEventListener('submit', function(e){ e.preventDefault(); });})();
