@@ -271,3 +271,4 @@
 
   .pular{position:absolute;left:-999px;top:8px;background:var(--grafite);color:#fff;padding:8px 14px;border-radius:999px;z-index:50}
   .pular:focus{left:12px}
+.ig-ico{display:inline-block;vertical-align:middle}
