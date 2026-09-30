@@ -147,4 +147,23 @@ document.documentElement.classList.add('js');
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && topo.classList.contains('aberto')){ topo.classList.remove('aberto'); btn.setAttribute('aria-expanded','false'); btn.focus(); } });
 })();
 
+(function(){
+  var form = document.getElementById('form-proposta');
+  if (!form) return;
+  var ok = document.getElementById('form-ok');
+  function limpar(){ form.reset(); ['e-nome','e-escola'].forEach(function(id){ var e = document.getElementById(id); if (e) e.textContent = ''; }); }
+  form.addEventListener('submit', function(){
+    var nome = document.getElementById('p-nome').value.trim();
+    var escola = document.getElementById('p-escola').value.trim();
+    if (!nome || !escola) return;
+    setTimeout(function(){
+      limpar();
+      ok.textContent = 'Pronto, ' + nome.split(' ')[0] + '! Abrimos o WhatsApp com a sua mensagem. É só tocar em enviar por lá. Por segurança, os dados foram apagados deste formulário.';
+      ok.hidden = false;
+    }, 400);
+  });
+  form.addEventListener('input', function(){ ok.hidden = true; });
+  window.addEventListener('pageshow', function(e){ if (e.persisted) limpar(); });
+})();
+
 (function(){var f=document.getElementById('form-contexto'); if(f) f.addEventListener('submit', function(e){ e.preventDefault(); });})();
