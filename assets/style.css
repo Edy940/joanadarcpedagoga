@@ -238,6 +238,7 @@
   .atalho .ir{margin-top:auto;font-weight:600;font-size:14px;color:var(--azul-escuro)}
   .atalho:focus-visible{outline:3px solid var(--azul);outline-offset:3px}
 
+  @media (max-width:800px){.formacoes{grid-template-columns:minmax(0,1fr)}}
   .pagina-entra{animation:entra .45s ease both}
   @keyframes entra{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
   @media (prefers-reduced-motion:reduce){.pagina-entra{animation:none}.atalho,.proximo a{transition:none}.atalho:hover,.proximo a:hover{transform:none}}
