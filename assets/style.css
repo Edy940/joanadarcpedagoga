@@ -272,6 +272,10 @@
   .projeto{border-radius:24px;padding:22px 24px}
   .projeto strong{font-family:var(--titulo);font-size:18px;display:block;margin-bottom:6px}
   .projeto p{margin:0;color:var(--suave);font-size:15px}
+  .selo-convite{display:inline-flex;align-items:center;gap:10px;margin:0 0 26px;padding:10px 18px;border:2px solid var(--mostarda);border-radius:999px;background:var(--papel);color:var(--grafite);font-weight:600;font-size:14.5px;line-height:1.35;text-decoration:none}
+  .selo-convite span{flex:none;width:10px;height:10px;border-radius:50%;background:var(--mostarda)}
+  .selo-convite:hover{background:var(--c-amarelo)}
+  .selo-convite:focus-visible{outline:3px solid var(--azul);outline-offset:3px}
   .convite{margin-top:16px;border:2px dashed var(--linha);border-radius:28px;padding:22px clamp(20px,4vw,34px);display:flex;flex-wrap:wrap;gap:14px 24px;align-items:center;justify-content:space-between}
   .convite p{margin:0;max-width:56ch}
   .sobre-foto2{margin:0}
