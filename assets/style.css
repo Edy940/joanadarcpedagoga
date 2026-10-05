@@ -268,6 +268,21 @@
   .linha-tempo .hoje-convite{margin-top:8px;color:var(--grafite);font-weight:600}
   .linha-tempo .hoje-convite a{color:var(--azul-escuro)}
   .linha-tempo .ano{display:block;font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--azul-escuro)}
+  .coord{margin:48px 0 0}
+  .coord h2{margin-bottom:8px}
+  .coord-intro{margin:0 0 18px;color:var(--suave);max-width:62ch}
+  .coord-lista{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+  .coord-lista li{background:var(--papel);border:1px solid var(--linha);border-left:6px solid var(--mostarda);border-radius:18px;padding:16px 18px}
+  .coord-lista strong{display:block;font-family:var(--titulo);font-size:16.5px;margin-bottom:4px}
+  .coord-lista span{color:var(--suave);font-size:14.5px;line-height:1.45}
+  .formacao{margin:0 0 48px}
+  .formacao h2{margin-bottom:18px}
+  .formacao-grade{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:14px}
+  .formacao-grade>div{border-radius:24px;padding:22px 24px;background:var(--c-lavanda)}
+  .formacao-grade>div+div{background:var(--c-azul)}
+  .formacao h3{font-family:var(--titulo);font-size:18px;margin:0 0 10px}
+  .formacao ul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:15px}
+  @media (max-width:800px){.formacao-grade{grid-template-columns:minmax(0,1fr)}}
   .projetos{margin:48px 0}
   .projetos h2{margin-bottom:18px}
   .projetos-grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
